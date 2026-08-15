@@ -4,34 +4,36 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>AI SHEP 2026 | 제1기 한보총 AI 기반 안전보건 최고경영자 과정</title>
-<meta name="description" content="안전보건경영의 새로운 기준, AI를 아는 CEO가 만듭니다. 국회 정책 × AI 기술 × 안전보건 전문성을 연결한 차세대 CEO 아카데미. 2026.9.16~12.2, 12주 과정." />
+<meta name="description" content="안전보건경영의 새로운 기준, AI를 아는 CEO가 만듭니다. 국회 정책 × AI 기술 × 안전보건 전문성을 연결한 차세대 CEO 아카데미. 2026.9.30~12.16, 12주 과정." />
 <link rel="canonical" href="https://aishep-2026.vercel.app/" />
 <link rel="icon" type="image/png" href="/favicon.png" />
+<link rel="preload" as="font" type="font/woff2" href="/fonts/kopub-Bold.woff2" crossorigin />
+<link rel="preload" as="font" type="font/woff2" href="/fonts/kopub-Medium.woff2" crossorigin />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="한보총 AI-SHEP" />
 <meta property="og:locale" content="ko_KR" />
 <meta property="og:url" content="https://aishep-2026.vercel.app/" />
 <meta property="og:title" content="제1기 한보총 AI 기반 안전보건 최고경영자 과정" />
-<meta property="og:description" content="AI-SHEP · 안전보건경영의 새로운 기준, AI를 아는 CEO가 만듭니다 · 2026.9.16~12.2 · 12주" />
+<meta property="og:description" content="AI-SHEP · 안전보건경영의 새로운 기준, AI를 아는 CEO가 만듭니다 · 2026.9.30~12.16 · 12주" />
 <meta property="og:image" content="https://aishep-2026.vercel.app/cover.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="제1기 한보총 AI 기반 안전보건 최고경영자 과정" />
-<meta name="twitter:description" content="AI-SHEP · 안전보건경영의 새로운 기준, AI를 아는 CEO가 만듭니다 · 2026.9.16~12.2 · 12주" />
+<meta name="twitter:description" content="AI-SHEP · 안전보건경영의 새로운 기준, AI를 아는 CEO가 만듭니다 · 2026.9.30~12.16 · 12주" />
 <meta name="twitter:image" content="https://aishep-2026.vercel.app/cover.png" />
 <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
 <style>
   @font-face{
     font-family:"KoPubWorld Dotum";
-    src:url("https://cdn.jsdelivr.net/gh/CXZ7720/webfonts@main/fonts/KoPubWorldDotum/KoPubWorldDotumBold.woff2") format("woff2"),
-        url("https://cdn.jsdelivr.net/gh/CXZ7720/webfonts@main/fonts/KoPubWorldDotum/KoPubWorldDotumBold.woff") format("woff");
+    src:url("/fonts/kopub-Bold.woff2") format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/CXZ7720/webfonts@main/fonts/KoPubWorldDotum/KoPubWorldDotumBold.woff2") format("woff2");
     font-weight:700;font-style:normal;font-display:swap;
   }
   @font-face{
     font-family:"KoPubWorld Dotum";
-    src:url("https://cdn.jsdelivr.net/gh/CXZ7720/webfonts@main/fonts/KoPubWorldDotum/KoPubWorldDotumMedium.woff2") format("woff2"),
-        url("https://cdn.jsdelivr.net/gh/CXZ7720/webfonts@main/fonts/KoPubWorldDotum/KoPubWorldDotumMedium.woff") format("woff");
+    src:url("/fonts/kopub-Medium.woff2") format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/CXZ7720/webfonts@main/fonts/KoPubWorldDotum/KoPubWorldDotumMedium.woff2") format("woff2");
     font-weight:400 500;font-style:normal;font-display:swap;
   }
 
@@ -184,12 +186,6 @@
   @media(max-width:900px){.info{grid-template-columns:1fr}}
 
   /* curriculum */
-  .track-switch{display:inline-flex;border:1px solid var(--gline);flex-wrap:wrap;background:rgba(0,0,0,.2);max-width:100%}
-  .track-switch button{font-family:var(--font);font-weight:700;font-size:15.5px;background:transparent;color:#B4CBE0;
-    border:0;padding:14px 24px;cursor:pointer;transition:.25s}
-  .track-switch button + button{border-left:1px solid var(--gline)}
-  .track-switch button[aria-selected="true"]{background:linear-gradient(120deg,#F7E7B8,#D8B45A 50%,#A9822E);color:#0A1020}
-  .switch-note{font-size:14.5px;color:var(--dim-2);margin:14px 0 30px}
   .legend{display:flex;gap:22px;flex-wrap:wrap;margin-bottom:34px;font-size:14.5px;color:#B4CBE0}
   .legend i{display:inline-block;width:11px;height:11px;margin-right:9px}
   .legend .lp{background:#63B0EA}.legend .lt{background:#37CBAB}.legend .lc{background:#E6CE8E}
@@ -268,6 +264,7 @@
   .frow .k{font-size:clamp(15px,1.7vw,17.5px)}
   .frow .k small{display:block;font-size:14.5px;color:var(--dim);margin-top:4px}
   .frow .v{font-size:clamp(18px,2.2vw,23px);font-weight:700;white-space:nowrap}
+  .frow .v.acct{font-size:clamp(15px,1.75vw,19px);white-space:normal;text-align:right;color:var(--gold-l)}
   .apply-box{padding:clamp(28px,4vw,42px);text-align:center;position:relative;
     background:linear-gradient(155deg,rgba(79,195,247,.14),rgba(255,255,255,.03));
     border:1px solid rgba(120,180,255,.2);display:flex;flex-direction:column;justify-content:center}
@@ -342,7 +339,7 @@
     </h1>
     <div class="tag-en rise d2">AI-SHEP · AI SAFETY &amp; HEALTH EXECUTIVE PROGRAM</div>
 
-    <p class="hero-lead rise d3">사고 이후 대응이 아닌, 사고 이전 예측의 시대</p>
+    <p class="hero-lead rise d3">AI·DX시대 중대재해 예방과<br>안전보건 경영혁신 CEO 아카데미</p>
 
     <p class="hero-h2 rise d4">안전보건경영의 새로운 기준,<br>AI를 아는 CEO가 만듭니다</p>
 
@@ -359,7 +356,7 @@
           <path d="M28 6l17 7v14c0 12-7 19-17 23C18 46 11 39 11 27V13z"/>
           <path d="M20 30h4l3-8 4 14 3-6h4" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
-        <h3>AI·DX 기반<br>중대재해 예방</h3>
+        <h3>AI·DX 기반<br>중대재해 예방 전략</h3>
         <p>예측과 예방 중심의<br>안전경영 혁신</p>
       </article>
       <article class="pillar">
@@ -371,8 +368,8 @@
           <line x1="32" y1="27" x2="32" y2="43"/><line x1="38" y1="27" x2="38" y2="43"/>
           <line x1="11" y1="43" x2="45" y2="43"/><line x1="7" y1="49" x2="49" y2="49"/>
         </svg>
-        <h3>국회 정책<br>네트워크</h3>
-        <p>국회의원과 직접 교류<br>정책 제안 기회</p>
+        <h3>국가 정책과<br>산업현장의 연결</h3>
+        <p>현직 국회의원 · AI ·<br>안전보건 전문가 특강</p>
       </article>
       <article class="pillar">
         <svg class="pico" viewBox="0 0 56 56" fill="none" stroke="url(#pg)" stroke-width="2" aria-hidden="true">
@@ -411,7 +408,7 @@
       <div class="card">
         <span class="cap">운영 내용</span>
         <dl class="kv">
-          <dt>기간</dt><dd>2026. 9. 16.(수) ~ 12. 2.(수) 12주 과정</dd>
+          <dt>기간</dt><dd>2026. 9. 30.(수) ~ 12. 16.(수) 12주 과정</dd>
           <dt>시간</dt><dd>매주 수요일 18:00~21:00<br>(18:00~19:00 저녁식사)</dd>
           <dt>장소</dt><dd>호텔(여의도 소재), 국회 의원회관,<br>FKI타워(구 전경련회관) 등</dd>
           <dt>운영기관</dt><dd>(사)한국안전보건단체총연합회</dd>
@@ -438,14 +435,9 @@
     <div class="sec-head">
       <div class="eyebrow">12주 커리큘럼</div>
       <h2>한 주는 <span class="aq">국회</span>에서,<br>다음 주는 <span class="aq">산업 현장</span>에서</h2>
-      <p>정책 강의(국회 의원회관)와 기술 강의(FKI타워)가 번갈아 진행됨. 개강일 기준을 선택하면 주차별 일정 확인 가능.</p>
+      <p>정책 강의(국회 의원회관)와 기술 강의(FKI타워)가 번갈아 진행됨.</p>
     </div>
 
-    <div class="track-switch" role="tablist" aria-label="개강일 선택">
-      <button role="tab" id="tab-a" aria-selected="true" aria-controls="panel" data-track="a">9/16 개강안</button>
-      <button role="tab" id="tab-b" aria-selected="false" aria-controls="panel" data-track="b">9/30 개강안</button>
-    </div>
-    <p class="switch-note">개강일은 확정 시 별도 안내 예정.</p>
 
     <div class="legend">
       <span><i class="lp"></i>국회 의원회관 · 정책</span>
@@ -453,7 +445,7 @@
       <span><i class="lc"></i>호텔 · 기업체</span>
     </div>
 
-    <div class="timeline" id="panel" role="tabpanel" aria-labelledby="tab-a"></div>
+    <div class="timeline" id="panel"></div>
 
     <p class="cur-note">* 프로그램은 사정에 따라 변경될 수 있음. &nbsp;/&nbsp; ** 해외연수(일본)는 12월 또는 1월 중 별도 진행.</p>
   </div>
@@ -474,14 +466,14 @@
         <div class="srow"><div class="t au">21:00–22:00</div><div><h4>네트워킹</h4><p>원우 간 자유 교류</p></div></div>
       </div>
       <aside class="card">
-        <span class="cap">과정 구성</span>
-        <dl class="kv">
-          <dt>입학식</dt><dd>한보총 회장·국회의원 축사, 원우 소개</dd>
-          <dt>특강</dt><dd>국회의원 · AI 전문가 · 안전보건 전문가</dd>
-          <dt>산업시찰</dt><dd>안전보건 우수기업 시찰 1회</dd>
-          <dt>해외연수</dt><dd>일본 1회 (12월 또는 1월 중)</dd>
-          <dt>수료식</dt><dd>수료증 수여, 우수 수료자 시상</dd>
-        </dl>
+        <span class="cap">프로그램</span>
+        <ul class="qual">
+          <li>입학식 및 수료식</li>
+          <li>국회의원, AI 전문가, 안전보건 전문가 특강</li>
+          <li>국내 산업시찰 (1회)</li>
+          <li>해외 연수 (1회, 일본)</li>
+          <li>참여자 네트워크</li>
+        </ul>
       </aside>
     </div>
   </div>
@@ -555,16 +547,16 @@
     <div class="fees">
       <div class="fee-main">
         <div class="fee-hd">
-          <div class="n au">등록비 500만원</div>
+          <div class="n au">등록금 500만원</div>
           <div class="l">12주 정규 과정 · 만찬 · 국내 산업시찰 포함</div>
         </div>
         <div class="frow">
-          <div class="k">한보총 회원단체 20% 할인<small>회원단체 소속 임직원 적용</small></div>
-          <div class="v au">400만원</div>
+          <div class="k">해외연수비<small>일본 · 별도 납부</small></div>
+          <div class="v">150만원 별도</div>
         </div>
         <div class="frow">
-          <div class="k">해외연수비<small>일본 · 12월 또는 1월 중 · 별도 납부 가능</small></div>
-          <div class="v">150만원 별도</div>
+          <div class="k">납부 계좌<small>(사)한국안전보건단체총연합회</small></div>
+          <div class="v acct">우리은행 1005-804-786229</div>
         </div>
       </div>
       <aside class="apply-box">
@@ -609,7 +601,7 @@
 var P="국회 의원회관",T="FKI타워",H="호텔",C="기업체";
 var lectures={
   open:{side:"center",place:H,title:"입학식",details:["입학식 및 축사","과정 소개, 원우 소개"],who:"한보총 회장 · 국회의원"},
-  visit:{side:"center",place:C,title:"국내 산업시찰",details:["안전보건 우수기업 시찰","일정 변경: 10/16(금)~10/17(토) 진행"],who:""},
+  visit:{side:"center",place:C,title:"국내 산업시찰",details:["안전보건 우수기업 시찰","일정은 별도 안내"],who:""},
   policy1:{side:"policy",place:P,title:"대한민국 산업안전보건 정책의 미래",details:["국회 환경노동위원회 정책과제","산업현장 안전규제 전망"],who:"국회 환경노동위원회 소속 국회의원"},
   tech1:{side:"tech",place:T,title:"AI 기반 스마트 안전관리 시스템 구축 전략",details:["AI CCTV · 스마트 PPE · IoT 센서 활용","실시간 위험감지 기술 사례"],who:"AI 전문가"},
   policy2:{side:"policy",place:P,title:"형사소송법 개정에 따른 중대재해처벌법 향후 방향",details:["CEO 법적 책임 범위","실제 판례 분석","최고경영자의 대응전략"],who:"법조인 출신 국회의원"},
@@ -621,20 +613,15 @@ var lectures={
   policy5:{side:"policy",place:P,title:"국가 재난·산업안전 컨트롤타워 정책",details:["재난대응 체계","국가 안전 거버넌스 개선 과제"],who:"행정안전위원회 국회의원"},
   close:{side:"center",place:H,title:"수료식",details:["수료식 및 축사","수료증 수여"],who:"한보총 회장 · 국회의원"}
 };
-var orderA=["open","visit","policy1","tech1","policy2","tech2","policy3","tech3","policy4","tech4","policy5","close"];
-var orderB=["open","policy1","visit","tech1","policy2","tech2","policy3","tech3","policy4","tech4","policy5","close"];
-var tracks={
-  a:{dates:["9/16","9/23","9/30","10/7","10/14","10/21","10/28","11/4","11/11","11/18","11/25","12/2"],keys:orderA},
-  b:{dates:["9/30","10/7","10/14","10/21","10/28","11/4","11/11","11/18","11/25","12/2","12/9","12/16"],keys:orderB}
-};
+var order=["open","policy1","visit","tech1","policy2","tech2","policy3","tech3","policy4","tech4","policy5","close"];
+var dates=["9/30","10/7","10/14","10/21","10/28","11/4","11/11","11/18","11/25","12/2","12/9","12/16"];
 var panel=document.getElementById("panel");
-function render(key){
-  var tr=tracks[key];
-  panel.innerHTML=tr.keys.map(function(k,i){
+function render(){
+  panel.innerHTML=order.map(function(k,i){
     var l=lectures[k];
     return '<article class="wk '+l.side+'">'+
       '<div class="wk-top"><span class="wk-n au">'+String(i+1).padStart(2,"0")+'</span>'+
-      '<span class="wk-date">'+tr.dates[i]+'</span><span class="wk-place">'+l.place+'</span></div>'+
+      '<span class="wk-date">'+dates[i]+'</span><span class="wk-place">'+l.place+'</span></div>'+
       '<h3>'+l.title+'</h3>'+
       '<ul>'+l.details.map(function(d){return '<li>'+d+'</li>';}).join("")+'</ul>'+
       (l.who?'<div class="who"><span>강사</span>'+l.who+'</div>':"")+
@@ -654,17 +641,9 @@ function observe(){
   },{threshold:.12,rootMargin:"0px 0px -40px 0px"});
   items.forEach(function(el){io.observe(el)});
 }
-document.querySelectorAll(".track-switch button").forEach(function(b){
-  b.addEventListener("click",function(){
-    document.querySelectorAll(".track-switch button").forEach(function(x){x.setAttribute("aria-selected","false")});
-    b.setAttribute("aria-selected","true");
-    panel.setAttribute("aria-labelledby",b.id);
-    render(b.dataset.track);
-  });
-});
 var nav=document.getElementById("nav");
 window.addEventListener("scroll",function(){nav.classList.toggle("scrolled",window.scrollY>20)},{passive:true});
-render("a");
+render();
 </script>
 </body>
 </html>
