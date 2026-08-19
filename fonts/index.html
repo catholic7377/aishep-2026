@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AI SHEP 2026 | 제1기 한보총 AI 기반 안전보건 최고경영자 과정</title>
+<meta name="description" content="안전보건경영의 새로운 기준, AI를 아는 CEO가 만듭니다. 국회 정책 × AI 기술 × 안전보건 전문성을 연결한 차세대 CEO 아카데미. 2026.9.30~12.16, 12주 과정." />
+<link rel="canonical" href="https://aishep-2026.vercel.app/" />
+<link rel="icon" type="image/png" href="/favicon.png" />
+<link rel="preload" as="font" type="font/woff2" href="/fonts/kopub-Bold.woff2" crossorigin />
+<link rel="preload" as="font" type="font/woff2" href="/fonts/kopub-Medium.woff2" crossorigin />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="한보총 AI-SHEP" />
+<meta property="og:locale" content="ko_KR" />
+<meta property="og:url" content="https://aishep-2026.vercel.app/" />
+<meta property="og:title" content="제1기 한보총 AI 기반 안전보건 최고경영자 과정" />
+<meta property="og:description" content="AI-SHEP · 안전보건경영의 새로운 기준, AI를 아는 CEO가 만듭니다 · 2026.9.30~12.16 · 12주" />
+<meta property="og:image" content="https://aishep-2026.vercel.app/cover.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="제1기 한보총 AI 기반 안전보건 최고경영자 과정" />
+<meta name="twitter:description" content="AI-SHEP · 안전보건경영의 새로운 기준, AI를 아는 CEO가 만듭니다 · 2026.9.30~12.16 · 12주" />
+<meta name="twitter:image" content="https://aishep-2026.vercel.app/cover.png" />
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+<style>
+  @font-face{
+    font-family:"KoPubWorld Dotum";
+    src:url("/fonts/kopub-Bold.woff2") format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/CXZ7720/webfonts@main/fonts/KoPubWorldDotum/KoPubWorldDotumBold.woff2") format("woff2");
+    font-weight:700;font-style:normal;font-display:swap;
+  }
+  @font-face{
+    font-family:"KoPubWorld Dotum";
+    src:url("/fonts/kopub-Medium.woff2") format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/CXZ7720/webfonts@main/fonts/KoPubWorldDotum/KoPubWorldDotumMedium.woff2") format("woff2");
+    font-weight:400 500;font-style:normal;font-display:swap;
+  }
+
+  :root{
+    --navy-0:#02060F;
+    --navy-1:#061029;
+    --navy-2:#0A1C46;
+    --navy-3:#0E2A63;
+    --blue:#1B4FA8;
+    --cyan:#4FC3F7;
+    --cyan-d:#1E88E5;
+
+    --gold-d:#8A6A22;
+    --gold:#D8B45A;
+    --gold-l:#F7E7B8;
+    --gline:rgba(216,180,90,.34);
+    --gline-s:rgba(216,180,90,.16);
+
+    --ivory:#E9F1FA;
+    --dim:#9FBAD4;
+    --dim-2:#7C97B4;
+
+    --font:"KoPubWorld Dotum","Pretendard Variable",Pretendard,-apple-system,sans-serif;
+    --fr:18px;
+    --pad:clamp(20px,4.2vw,56px);
+    --maxw:1160px;
+  }
+
+  *{box-sizing:border-box;min-width:0}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{
+    margin:0;padding:0 var(--fr);
+    font-family:var(--font);font-size:17px;line-height:1.85;font-weight:500;
+    color:var(--ivory);
+    background:
+      radial-gradient(80vw 60vh at 78% -6%, rgba(30,136,229,.28), transparent 62%),
+      radial-gradient(70vw 55vh at 6% 34%, rgba(21,79,168,.22), transparent 66%),
+      radial-gradient(75vw 55vh at 88% 76%, rgba(216,180,90,.10), transparent 60%),
+      linear-gradient(178deg,var(--navy-1) 0%,var(--navy-2) 28%,#0B2352 52%,var(--navy-2) 74%,var(--navy-0) 100%);
+    background-attachment:fixed;
+    -webkit-font-smoothing:antialiased;
+    word-break:keep-all;overflow-wrap:anywhere;
+    overflow-x:hidden;
+  }
+  body::before{
+    content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.5;
+    background-image:linear-gradient(rgba(120,180,255,.05) 1px,transparent 1px),
+                     linear-gradient(90deg,rgba(120,180,255,.05) 1px,transparent 1px);
+    background-size:92px 92px;
+    -webkit-mask-image:linear-gradient(180deg,#000,transparent 42%,transparent 62%,#000);
+    mask-image:linear-gradient(180deg,#000,transparent 42%,transparent 62%,#000);
+  }
+
+  .frame{position:fixed;inset:0;z-index:90;pointer-events:none;border:var(--fr) solid transparent;
+    border-image:linear-gradient(135deg,#0A5449 0%,#0A6B72 26%,#0F5D9E 56%,#12356F 80%,#0A2C5F 100%) 1}
+  .frame-in{position:fixed;inset:calc(var(--fr) + 9px);z-index:91;pointer-events:none;border:1px solid var(--gline-s)}
+  .frame-in::before,.frame-in::after{content:"";position:absolute;width:16px;height:16px;border:1px solid var(--gold)}
+  .frame-in::before{top:-1px;left:-1px;border-right:0;border-bottom:0}
+  .frame-in::after{bottom:-1px;right:-1px;border-left:0;border-top:0}
+  @media(max-width:700px){:root{--fr:10px}}
+
+  h1,h2,h3,h4{margin:0;font-weight:700;letter-spacing:-.022em;line-height:1.4;text-wrap:balance}
+  p{margin:0}
+  a{color:inherit}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--pad);position:relative;z-index:1}
+
+  .au{background:linear-gradient(100deg,#9C7A2C 0%,#D5B159 18%,#F7E7B8 44%,#E3C177 60%,#B8913F 84%,#F2DDA6 100%);
+    background-size:230% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+  .aq{background:linear-gradient(100deg,#7FD4F5,#4FC3F7 40%,#5B9BE8 78%,#8FB6F0);
+    -webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+  .shimmer{animation:sweep 9s ease-in-out 1.4s infinite}
+  @keyframes sweep{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+
+  .eyebrow{font-size:16px;font-weight:700;letter-spacing:.04em;color:var(--gold-l);display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+  .eyebrow::before{content:"";width:34px;height:2px;flex:none;background:linear-gradient(90deg,transparent,var(--gold))}
+
+  nav{position:sticky;top:var(--fr);z-index:60;transition:background .35s,border-color .35s;border-bottom:1px solid transparent}
+  nav.scrolled{background:rgba(6,16,41,.85);backdrop-filter:blur(14px);border-bottom-color:var(--gline-s)}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;gap:14px;height:70px}
+  .brand{font-weight:700;letter-spacing:.12em;font-size:19px;text-decoration:none;white-space:nowrap}
+  .nav-links{display:flex;gap:30px}
+  .nav-links a{font-size:16px;font-weight:500;text-decoration:none;color:#BBD1E6;transition:color .2s;white-space:nowrap}
+  .nav-links a:hover{color:var(--gold-l)}
+  @media(max-width:1040px){.nav-links{display:none}}
+
+  .btn{display:inline-block;font-size:17px;font-weight:700;padding:14px 26px;text-decoration:none;text-align:center;
+    color:#0A1020;background:linear-gradient(120deg,#F7E7B8,#D8B45A 48%,#A9822E);
+    border:1px solid transparent;box-shadow:0 10px 30px rgba(216,180,90,.26);
+    transition:transform .22s cubic-bezier(.2,.7,.3,1),box-shadow .22s,filter .22s;max-width:100%}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 16px 38px rgba(216,180,90,.4);filter:brightness(1.06)}
+  .btn-ghost{background:transparent;color:var(--gold-l);border-color:var(--gline);box-shadow:none}
+  .btn-ghost:hover{background:rgba(216,180,90,.12);box-shadow:none}
+  .btn-lg{padding:19px 40px;font-size:19px}
+
+  /* hero */
+  .hero{padding:clamp(40px,7vw,86px) 0 0}
+  .rise{opacity:0;transform:translateY(22px);animation:rise .9s cubic-bezier(.2,.7,.25,1) forwards}
+  .d1{animation-delay:.05s}.d2{animation-delay:.16s}.d3{animation-delay:.28s}
+  .d4{animation-delay:.4s}.d5{animation-delay:.52s}.d6{animation-delay:.64s}
+  @keyframes rise{to{opacity:1;transform:none}}
+
+  .badge-1st{display:inline-block;padding:9px 26px;
+    background:linear-gradient(120deg,#F7E7B8,#D8B45A 50%,#A9822E);color:#0A1020;
+    font-size:clamp(15px,1.7vw,19px);font-weight:700;letter-spacing:.1em}
+  .hero h1{margin-top:24px;font-size:clamp(34px,6.6vw,80px);line-height:1.24;letter-spacing:-.035em}
+  .hero h1 .w{color:#fff}
+  .tag-en{margin-top:20px;font-size:clamp(12px,1.4vw,16px);font-weight:500;letter-spacing:.13em;color:var(--dim-2)}
+  .hero-lead{margin-top:38px;padding-left:18px;border-left:4px solid var(--gold);
+    font-size:clamp(16px,1.9vw,22px);font-weight:700;color:var(--gold-l)}
+  .hero-h2{margin-top:24px;font-size:clamp(20px,2.9vw,34px);font-weight:700;color:#DCE9F5;
+    line-height:1.45;letter-spacing:-.02em}
+  .hero-sub{margin-top:22px;max-width:44ch;font-size:clamp(15px,1.7vw,19px);color:var(--dim);font-weight:500}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:38px}
+
+  /* 4 pillars */
+  .pillars{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:clamp(48px,6vw,80px)}
+  .pillar{padding:30px 22px 32px;text-align:center;position:relative;
+    background:linear-gradient(165deg,rgba(79,195,247,.09),rgba(255,255,255,.03));
+    border:1px solid rgba(120,180,255,.16);transition:transform .3s cubic-bezier(.2,.7,.3,1),border-color .3s}
+  .pillar:hover{transform:translateY(-6px);border-color:var(--gline)}
+  .pico{width:56px;height:56px;margin:0 auto 18px;display:block}
+  .pillar h3{font-size:clamp(17px,1.9vw,21px);line-height:1.45;color:#fff}
+  .pillar p{margin-top:12px;font-size:15px;color:var(--dim);line-height:1.7}
+  @media(max-width:980px){.pillars{grid-template-columns:1fr 1fr}}
+  @media(max-width:560px){.pillars{grid-template-columns:1fr}}
+
+  /* sections */
+  .sec{padding:clamp(66px,8.5vw,110px) 0}
+  .sec-head{max-width:62ch;margin-bottom:clamp(38px,5vw,60px)}
+  .sec-head h2{font-size:clamp(26px,4vw,46px);margin-top:20px;line-height:1.3;letter-spacing:-.028em}
+  .sec-head p{margin-top:18px;font-size:clamp(16px,1.7vw,19px);color:var(--dim)}
+
+  /* info cards */
+  .info{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,3vw,32px)}
+  .card{position:relative;background:linear-gradient(165deg,rgba(255,255,255,.07),rgba(255,255,255,.025));
+    border:1px solid rgba(120,180,255,.18);padding:clamp(26px,3.4vw,40px)}
+  .card::after{content:"";position:absolute;inset:9px;border:1px solid var(--gline-s);pointer-events:none}
+  .cap{display:inline-block;margin-bottom:24px;padding:9px 24px;
+    background:linear-gradient(120deg,#F7E7B8,#D8B45A 50%,#A9822E);color:#0A1020;
+    font-size:clamp(16px,1.8vw,19px);font-weight:700}
+  .kv{margin:0;display:grid;grid-template-columns:auto 1fr;gap:14px 18px;font-size:clamp(15px,1.65vw,17.5px)}
+  .kv dt{font-weight:700;color:var(--gold-l);white-space:nowrap}
+  .kv dd{margin:0;color:#DCE9F5;line-height:1.72}
+  .qual{list-style:none;margin:0;padding:0}
+  .qual li{position:relative;padding:11px 0 11px 34px;font-size:clamp(15px,1.65vw,17.5px);color:#DCE9F5;
+    border-bottom:1px solid rgba(120,180,255,.12)}
+  .qual li:last-child{border-bottom:0}
+  .qual li::before{content:"";position:absolute;left:2px;top:19px;width:14px;height:8px;
+    border-left:2.6px solid var(--gold);border-bottom:2.6px solid var(--gold);transform:rotate(-45deg)}
+  @media(max-width:900px){.info{grid-template-columns:1fr}}
+
+  /* curriculum */
+  .legend{display:flex;gap:22px;flex-wrap:wrap;margin-bottom:34px;font-size:14.5px;color:#B4CBE0}
+  .legend i{display:inline-block;width:11px;height:11px;margin-right:9px}
+  .legend .lp{background:#63B0EA}.legend .lt{background:#37CBAB}.legend .lc{background:#E6CE8E}
+
+  .timeline{position:relative}
+  .wk{position:relative;width:calc(50% - 11px);margin-bottom:22px;padding:28px 30px 30px;
+    background:linear-gradient(160deg,rgba(255,255,255,.10),rgba(255,255,255,.02)),#0A1C46;border:1px solid rgba(120,180,255,.17);
+    opacity:0;transform:translateY(20px);transition:opacity .6s,transform .6s,border-color .3s}
+  .wk.in{opacity:1;transform:none}
+  .wk:hover{border-color:var(--gline)}
+  .wk.center:hover{border-color:var(--gold)}
+  .wk{position:relative;z-index:1}
+  .wk.policy{margin-right:auto;border-left:3px solid #63B0EA}
+  .wk.tech{margin-left:auto;border-left:3px solid #37CBAB}
+  .wk.center{width:min(600px,100%);margin-left:auto;margin-right:auto;text-align:center;
+    background:linear-gradient(160deg,rgba(216,180,90,.16),rgba(216,180,90,.03)),#0B1F49;border:1px solid var(--gline)}
+  .wk-top{display:flex;align-items:baseline;gap:15px;flex-wrap:wrap;margin-bottom:14px}
+  .wk-n{font-size:36px;font-weight:700;line-height:1;letter-spacing:-.03em}
+  .wk-date{font-size:18px;font-weight:700;color:#fff}
+  .wk-place{font-size:14px;font-weight:500;padding:4px 12px;border:1px solid rgba(120,180,255,.3);color:#C3D8E8}
+  .wk.center .wk-top{justify-content:center}
+  .wk h3{font-size:clamp(18px,2vw,23px);color:#fff;line-height:1.5}
+  .wk ul{margin:18px 0 0;padding:0;list-style:none}
+  .wk li{font-size:clamp(16px,1.85vw,20px);color:#C3D8E8;padding-left:20px;position:relative;line-height:1.62}
+  .wk li::before{content:"";position:absolute;left:0;top:16px;width:10px;height:1.6px;background:var(--gold)}
+  .wk .who{margin-top:20px;padding-top:16px;border-top:1px solid rgba(120,180,255,.16);font-size:17px;color:var(--gold-l)}
+  .wk .who span{color:var(--dim-2);font-size:14px;font-weight:500;margin-right:12px}
+  .wk.center ul{display:inline-block;text-align:left}
+  .cur-note{margin-top:26px;font-size:14.5px;color:var(--dim-2)}
+  @media(max-width:940px){
+    .wk,.wk.center{width:100%;margin-left:0;margin-right:0;text-align:left}
+    .wk.center .wk-top{justify-content:flex-start}
+  }
+
+  /* schedule */
+  .day{display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(26px,4vw,56px);align-items:start}
+  .sched{border-top:1px solid var(--gline-s)}
+  .srow{display:grid;grid-template-columns:minmax(0,150px) 1fr;gap:18px;padding:20px 0;border-bottom:1px solid var(--gline-s);transition:padding-left .25s}
+  .srow:hover{padding-left:8px}
+  .srow .t{font-weight:700;font-size:16.5px}
+  .srow h4{font-size:19px;margin-bottom:5px;color:#fff}
+  .srow p{font-size:15.5px;color:var(--dim)}
+  @media(max-width:940px){.day{grid-template-columns:1fr}.srow{grid-template-columns:minmax(0,116px) 1fr;gap:12px}}
+
+  /* benefits */
+  .bens{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .ben{display:flex;gap:22px;align-items:flex-start;padding:30px 28px;
+    background:linear-gradient(160deg,rgba(216,180,90,.11),rgba(255,255,255,.03));
+    border:1px solid var(--gline-s);transition:transform .3s cubic-bezier(.2,.7,.3,1),border-color .3s}
+  .ben:hover{transform:translateY(-5px);border-color:var(--gline)}
+  .bico{width:52px;height:52px;flex:none}
+  .ben h3{font-size:clamp(18px,2vw,22px);color:#fff;line-height:1.45}
+  .ben p{margin-top:10px;font-size:clamp(15px,1.6vw,17px);color:var(--dim);line-height:1.75}
+  @media(max-width:900px){.bens{grid-template-columns:1fr}}
+  @media(max-width:420px){.ben{flex-direction:column;gap:16px}}
+
+  /* fee */
+  .fees{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(20px,3vw,34px)}
+  .fee-main{position:relative;padding:clamp(28px,4vw,46px);display:flex;flex-direction:column;
+    border:1px solid var(--gline);background:linear-gradient(160deg,rgba(216,180,90,.15),rgba(255,255,255,.03) 58%);
+    box-shadow:0 26px 60px rgba(0,0,0,.3)}
+  .fee-main::after{content:"";position:absolute;inset:9px;border:1px solid var(--gline-s);pointer-events:none}
+  .fee-hd{text-align:center;padding-bottom:22px;border-bottom:1px solid var(--gline-s)}
+  .fee-hd .n{font-size:clamp(30px,4.6vw,50px);font-weight:700;line-height:1.2;letter-spacing:-.02em}
+  .fee-hd .l{font-size:17px;color:var(--dim);margin-top:6px}
+  .frow{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:18px 0;border-bottom:1px solid rgba(120,180,255,.13)}
+  .frow:last-of-type{border-bottom:0}
+  .frow .k{font-size:clamp(15px,1.7vw,17.5px)}
+  .frow .k small{display:block;font-size:14.5px;color:var(--dim);margin-top:4px}
+  .frow .v{font-size:clamp(18px,2.2vw,23px);font-weight:700;white-space:nowrap}
+  .frow .v.acct{font-size:clamp(15px,1.75vw,19px);white-space:normal;text-align:right;color:var(--gold-l)}
+  .apply-box{padding:clamp(28px,4vw,42px);text-align:center;position:relative;
+    background:linear-gradient(155deg,rgba(79,195,247,.14),rgba(255,255,255,.03));
+    border:1px solid rgba(120,180,255,.2);display:flex;flex-direction:column;justify-content:center}
+  .apply-box::after{content:"";position:absolute;inset:9px;border:1px solid var(--gline-s);pointer-events:none}
+  .apply-box h3{font-size:clamp(20px,2.4vw,25px);color:#fff;line-height:1.5}
+  .apply-box p{margin-top:16px;font-size:16.5px;color:var(--dim);line-height:1.8}
+  .apply-box .btn{margin-top:26px;align-self:center}
+  @media(max-width:900px){.fees{grid-template-columns:1fr}}
+
+  /* cta */
+  .cta{padding:clamp(60px,8vw,104px) 0;border-top:1px solid var(--gline-s)}
+  .cta-in{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(30px,5vw,64px);align-items:end}
+  .cta-in h2{font-size:clamp(27px,4.4vw,50px);margin-top:24px;line-height:1.28;color:#fff;letter-spacing:-.03em}
+  .cta-in > div > p{margin-top:20px;color:var(--dim);max-width:40ch}
+  .contact{border-top:1px solid var(--gline);padding-top:24px}
+  .contact dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:12px 20px;font-size:16.5px}
+  .contact dt{font-weight:700;font-size:15px;color:var(--gold-l);white-space:nowrap}
+  .contact dd{margin:0;color:#DCE9F5}
+  .contact dd a{text-decoration:none;border-bottom:1px solid var(--gline)}
+  .contact .btn{margin-top:24px}
+  @media(max-width:940px){.cta-in{grid-template-columns:1fr}}
+
+  footer{padding:32px 0 46px;font-size:15px;color:var(--dim-2)}
+  .foot-in{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;
+    border-top:1px solid var(--gline-s);padding-top:26px;line-height:1.9}
+
+  :focus-visible{outline:2px solid var(--gold-l);outline-offset:3px}
+  @media(prefers-reduced-motion:reduce){
+    *{transition:none !important;animation:none !important}
+    .rise,.wk{opacity:1;transform:none}
+    html{scroll-behavior:auto}
+  }
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" aria-hidden="true" style="position:absolute">
+  <defs>
+    <linearGradient id="pg" gradientUnits="userSpaceOnUse" x1="4" y1="4" x2="52" y2="52">
+      <stop offset="0" stop-color="#7FD4F5"/><stop offset=".5" stop-color="#4FC3F7"/><stop offset="1" stop-color="#5B9BE8"/>
+    </linearGradient>
+    <linearGradient id="gg" gradientUnits="userSpaceOnUse" x1="4" y1="4" x2="52" y2="52">
+      <stop offset="0" stop-color="#F7E7B8"/><stop offset=".5" stop-color="#D8B45A"/><stop offset="1" stop-color="#A9822E"/>
+    </linearGradient>
+  </defs>
+</svg>
+
+<div class="frame"></div>
+<div class="frame-in"></div>
+
+<nav id="nav">
+  <div class="wrap nav-in">
+    <a class="brand au" href="#top">AI-SHEP</a>
+    <div class="nav-links">
+      <a href="#why">과정 특징</a>
+      <a href="#info">운영 내용</a>
+      <a href="#curriculum">커리큘럼</a>
+      <a href="#benefit">교육생 혜택</a>
+      <a href="#fee">교육비</a>
+    </div>
+    <a class="btn" href="https://naver.me/FwGUfyq2" target="_blank" rel="noopener">지원 신청</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="badge-1st rise d1">제 1 기</div>
+
+    <h1 class="rise d2">
+      <span class="w">한보총 </span><span class="au shimmer">AI</span><span class="w"> 기반</span><br>
+      <span class="w">안전보건 </span><span class="au shimmer">최고경영자 과정</span>
+    </h1>
+    <div class="tag-en rise d2">AI-SHEP · AI SAFETY &amp; HEALTH EXECUTIVE PROGRAM</div>
+
+    <p class="hero-lead rise d3">AI·DX시대 중대재해 예방과<br>안전보건 경영혁신 CEO 아카데미</p>
+
+    <p class="hero-h2 rise d4">안전보건경영의 새로운 기준,<br>AI를 아는 CEO가 만듭니다</p>
+
+    <p class="hero-sub rise d4">국회 정책 × AI 기술 × 안전보건 전문성을 연결한 차세대 CEO 아카데미</p>
+
+    <div class="hero-cta rise d5">
+      <a class="btn btn-lg" href="https://naver.me/FwGUfyq2" target="_blank" rel="noopener">지원 신청하기</a>
+      <a class="btn btn-ghost btn-lg" href="#curriculum">12주 커리큘럼 보기</a>
+    </div>
+
+    <div class="pillars rise d6" id="why">
+      <article class="pillar">
+        <svg class="pico" viewBox="0 0 56 56" fill="none" stroke="url(#pg)" stroke-width="2" aria-hidden="true">
+          <path d="M28 6l17 7v14c0 12-7 19-17 23C18 46 11 39 11 27V13z"/>
+          <path d="M20 30h4l3-8 4 14 3-6h4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3>AI·DX 기반<br>중대재해 예방 전략</h3>
+        <p>예측과 예방 중심의<br>안전경영 혁신</p>
+      </article>
+      <article class="pillar">
+        <svg class="pico" viewBox="0 0 56 56" fill="none" stroke="url(#pg)" stroke-width="2" aria-hidden="true">
+          <path d="M17 22a11 11 0 0 1 22 0"/>
+          <line x1="28" y1="9" x2="28" y2="4"/>
+          <line x1="12" y1="22" x2="44" y2="22"/><line x1="12" y1="27" x2="44" y2="27"/>
+          <line x1="18" y1="27" x2="18" y2="43"/><line x1="24" y1="27" x2="24" y2="43"/>
+          <line x1="32" y1="27" x2="32" y2="43"/><line x1="38" y1="27" x2="38" y2="43"/>
+          <line x1="11" y1="43" x2="45" y2="43"/><line x1="7" y1="49" x2="49" y2="49"/>
+        </svg>
+        <h3>국가 정책과<br>산업현장의 연결</h3>
+        <p>현직 국회의원 · AI ·<br>안전보건 전문가 특강</p>
+      </article>
+      <article class="pillar">
+        <svg class="pico" viewBox="0 0 56 56" fill="none" stroke="url(#pg)" stroke-width="2" aria-hidden="true">
+          <circle cx="28" cy="14" r="6"/><circle cx="11" cy="24" r="5"/><circle cx="45" cy="24" r="5"/>
+          <path d="M16 42c1.5-7 6.2-11 12-11s10.5 4 12 11" stroke-linecap="round"/>
+          <path d="M3 42c1-5 3.6-8 8-8" stroke-linecap="round"/>
+          <path d="M53 42c-1-5-3.6-8-8-8" stroke-linecap="round"/>
+        </svg>
+        <h3>최고 수준의<br>CEO 네트워크</h3>
+        <p>기업·공공기관<br>리더와의 연결</p>
+      </article>
+      <article class="pillar">
+        <svg class="pico" viewBox="0 0 56 56" fill="none" stroke="url(#gg)" stroke-width="2" aria-hidden="true">
+          <path d="M18 8h20v13a10 10 0 0 1-20 0z"/>
+          <path d="M18 12h-6v4a7 7 0 0 0 7 7M38 12h6v4a7 7 0 0 1-7 7"/>
+          <line x1="28" y1="31" x2="28" y2="39"/>
+          <path d="M19 48l9-9 9 9z"/>
+          <circle cx="28" cy="17" r="4"/>
+        </svg>
+        <h3>우수 수료자<br>국회의원상</h3>
+        <p>성과와 리더십을 인정하는<br>특별한 수료 혜택</p>
+      </article>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="sec" id="info">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">운영 내용 · 신청 자격</div>
+      <h2><span class="au">12주</span>, 수요일 저녁을<br>비워두십시오</h2>
+    </div>
+    <div class="info">
+      <div class="card">
+        <span class="cap">운영 내용</span>
+        <dl class="kv">
+          <dt>기간</dt><dd>2026. 9. 30.(수) ~ 12. 16.(수) 12주 과정</dd>
+          <dt>시간</dt><dd>매주 수요일 18:00~21:00<br>(18:00~19:00 저녁식사)</dd>
+          <dt>장소</dt><dd>호텔(여의도 소재), 국회 의원회관,<br>FKI타워(구 전경련회관) 등</dd>
+          <dt>운영기관</dt><dd>(사)한국안전보건단체총연합회</dd>
+          <dt>구성</dt><dd>입학식 · 특강 · 국내 산업시찰 1회<br>해외연수 1회(일본) · 수료식</dd>
+        </dl>
+      </div>
+      <div class="card">
+        <span class="cap">신청 자격</span>
+        <ul class="qual">
+          <li>기업·공공기관 CEO 및 임원</li>
+          <li>CSO(안전보건최고책임자)</li>
+          <li>정부·지자체 책임자</li>
+          <li>안전보건 경영 핵심 리더</li>
+          <li>안전보건 관련 기관 대표 및 관계자</li>
+          <li>안전보건 분야 대학교수 등</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="curriculum">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">12주 커리큘럼</div>
+      <h2>한 주는 <span class="aq">국회</span>에서,<br>다음 주는 <span class="aq">산업 현장</span>에서</h2>
+      <p>정책 강의(국회 의원회관)와 기술 강의(FKI타워)가 번갈아 진행됨.</p>
+    </div>
+
+
+    <div class="legend">
+      <span><i class="lp"></i>국회 의원회관 · 정책</span>
+      <span><i class="lt"></i>FKI타워 · AI·기술</span>
+      <span><i class="lc"></i>호텔 · 기업체</span>
+    </div>
+
+    <div class="timeline" id="panel"></div>
+
+    <p class="cur-note">* 프로그램은 사정에 따라 변경될 수 있음. &nbsp;/&nbsp; ** 해외연수(일본)는 12월 또는 1월 중 별도 진행.</p>
+  </div>
+</section>
+
+<section class="sec" id="day">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">하루 일정</div>
+      <h2>만찬에서 시작해<br><span class="au">네트워킹</span>으로 마칩니다</h2>
+    </div>
+    <div class="day">
+      <div class="sched">
+        <div class="srow"><div class="t au">18:00–19:00</div><div><h4>저녁식사</h4><p>국회의원 식당 또는 FKI타워 식당</p></div></div>
+        <div class="srow"><div class="t au">19:00–20:00</div><div><h4>주제별 강의</h4><p>국회의원 · AI 전문가 · 안전보건 전문가</p></div></div>
+        <div class="srow"><div class="t au">20:00–20:30</div><div><h4>토론</h4><p>강사와 직접 토론 · 현장 질의</p></div></div>
+        <div class="srow"><div class="t au">20:30–21:00</div><div><h4>원우 소개</h4><p>교육생 상호 소개 및 사업 소개</p></div></div>
+        <div class="srow"><div class="t au">21:00–22:00</div><div><h4>네트워킹</h4><p>원우 간 자유 교류</p></div></div>
+      </div>
+      <aside class="card">
+        <span class="cap">프로그램</span>
+        <ul class="qual">
+          <li>입학식 및 수료식</li>
+          <li>국회의원, AI 전문가, 안전보건 전문가 특강</li>
+          <li>국내 산업시찰 (1회)</li>
+          <li>해외 연수 (1회, 일본)</li>
+          <li>참여자 네트워크</li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="benefit">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">교육생 혜택</div>
+      <h2>수료증 한 장으로<br>끝나지 <span class="au">않습니다</span></h2>
+    </div>
+    <div class="bens">
+      <article class="ben">
+        <svg class="bico" viewBox="0 0 56 56" fill="none" stroke="url(#gg)" stroke-width="2" aria-hidden="true">
+          <path d="M17 22a11 11 0 0 1 22 0"/>
+          <line x1="28" y1="9" x2="28" y2="4"/>
+          <line x1="12" y1="22" x2="44" y2="22"/><line x1="12" y1="27" x2="44" y2="27"/>
+          <line x1="18" y1="27" x2="18" y2="43"/><line x1="24" y1="27" x2="24" y2="43"/>
+          <line x1="32" y1="27" x2="32" y2="43"/><line x1="38" y1="27" x2="38" y2="43"/>
+          <line x1="11" y1="43" x2="45" y2="43"/><line x1="7" y1="49" x2="49" y2="49"/>
+        </svg>
+        <div>
+          <h3>국회의원과 직접 교류</h3>
+          <p>강의와 토론, 만찬 자리에서 정책 결정자와 같은 테이블에 앉습니다.</p>
+        </div>
+      </article>
+      <article class="ben">
+        <svg class="bico" viewBox="0 0 56 56" fill="none" stroke="url(#gg)" stroke-width="2" aria-hidden="true">
+          <path d="M12 10h32v28H26l-10 9v-9h-4z" stroke-linejoin="round"/>
+          <line x1="20" y1="20" x2="36" y2="20" stroke-linecap="round"/>
+          <line x1="20" y1="28" x2="31" y2="28" stroke-linecap="round"/>
+        </svg>
+        <div>
+          <h3>개인별 정책 제안 창구</h3>
+          <p>현장의 의견을 국회에 직접 전달할 수 있는 통로가 원우별로 열립니다.</p>
+        </div>
+      </article>
+      <article class="ben">
+        <svg class="bico" viewBox="0 0 56 56" fill="none" stroke="url(#gg)" stroke-width="2" aria-hidden="true">
+          <path d="M28 47S9 36 9 22a10 10 0 0 1 19-4 10 10 0 0 1 19 4c0 14-19 25-19 25z" stroke-linejoin="round"/>
+          <path d="M14 27h9l3-6 5 12 3-6h8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div>
+          <h3>종합검진 특가</h3>
+          <p>의료기관과 연계한 종합건강검진을 특별 조건으로 제공합니다.</p>
+        </div>
+      </article>
+      <article class="ben">
+        <svg class="bico" viewBox="0 0 56 56" fill="none" stroke="url(#gg)" stroke-width="2" aria-hidden="true">
+          <path d="M18 8h20v13a10 10 0 0 1-20 0z"/>
+          <path d="M18 12h-6v4a7 7 0 0 0 7 7M38 12h6v4a7 7 0 0 1-7 7"/>
+          <line x1="28" y1="31" x2="28" y2="39"/>
+          <path d="M19 48l9-9 9 9z"/>
+          <circle cx="28" cy="17" r="4"/>
+        </svg>
+        <div>
+          <h3>우수 수료자 국회의원상</h3>
+          <p>성과와 리더십을 인정하는 특별한 수료 혜택이 주어집니다.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="fee">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">교육비 및 신청</div>
+      <h2>대한민국 안전보건경영을 이끌<br><span class="au">제1기 CEO</span>를 모집합니다</h2>
+    </div>
+    <div class="fees">
+      <div class="fee-main">
+        <div class="fee-hd">
+          <div class="n au">등록금 500만원</div>
+          <div class="l">12주 정규 과정 · 만찬 · 국내 산업시찰 포함</div>
+        </div>
+        <div class="frow">
+          <div class="k">해외연수비<small>일본 · 별도 납부</small></div>
+          <div class="v">150만원 별도</div>
+        </div>
+        <div class="frow">
+          <div class="k">납부 계좌<small>(사)한국안전보건단체총연합회</small></div>
+          <div class="v acct">우리은행 1005-804-786229</div>
+        </div>
+      </div>
+      <aside class="apply-box">
+        <h3>제1기 AI-SHEP<br>지원 신청</h3>
+        <p>아래 신청 링크에서<br>지원서를 작성하시면 됩니다.<br>세부 문의는 사무국으로 연락 바람.</p>
+        <a class="btn btn-lg" href="https://naver.me/FwGUfyq2" target="_blank" rel="noopener">신청서 작성하기</a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<div class="cta" id="apply">
+  <div class="wrap cta-in">
+    <div>
+      <div class="eyebrow">제1기 모집</div>
+      <h2>첫 기수의 자리는<br><span class="au shimmer">먼저 결정한 분들</span>의 것임.</h2>
+      <p>지원서 접수와 세부 일정은 사무국에서 안내함.</p>
+    </div>
+    <div class="contact">
+      <dl>
+        <dt>주관</dt><dd>(사)한국안전보건단체총연합회 (KFSH)</dd>
+        <dt>전화</dt><dd><a href="tel:0269521962">02-6952-1962</a></dd>
+        <dt>이메일</dt><dd><a href="mailto:safetyandhealth20@gmail.com">safetyandhealth20@gmail.com</a></dd>
+        <dt>주소</dt><dd>서울특별시 영등포구 영등포로 150<br>생각공장 당산 C동 707호 (07292)</dd>
+      </dl>
+      <a class="btn btn-lg" href="https://naver.me/FwGUfyq2" target="_blank" rel="noopener">지원 신청하기</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap foot-in">
+    <span>(사)한국안전보건단체총연합회(KFSH) · 회장 백은미 · 02-6952-1962<br>
+      서울특별시 영등포구 영등포로 150 생각공장 당산 C동 707호 (07292)</span>
+    <span>&copy; 2026 KFSH · 제1기 AI-SHEP</span>
+  </div>
+</footer>
+
+<script>
+var P="국회 의원회관",T="FKI타워",H="호텔",C="기업체";
+var lectures={
+  open:{side:"center",place:H,title:"입학식",details:["입학식 및 축사","과정 소개, 원우 소개"],who:"한보총 회장 · 국회의원"},
+  visit:{side:"center",place:C,title:"국내 산업시찰",details:["안전보건 우수기업 시찰","일정은 별도 안내"],who:""},
+  policy1:{side:"policy",place:P,title:"대한민국 산업안전보건 정책의 미래",details:["국회 환경노동위원회 정책과제","산업현장 안전규제 전망"],who:"국회 환경노동위원회 소속 국회의원"},
+  tech1:{side:"tech",place:T,title:"AI 기반 스마트 안전관리 시스템 구축 전략",details:["AI CCTV · 스마트 PPE · IoT 센서 활용","실시간 위험감지 기술 사례"],who:"AI 전문가"},
+  policy2:{side:"policy",place:P,title:"형사소송법 개정에 따른 중대재해처벌법 향후 방향",details:["CEO 법적 책임 범위","실제 판례 분석","최고경영자의 대응전략"],who:"법조인 출신 국회의원"},
+  tech2:{side:"tech",place:T,title:"드론·로봇 활용 산업현장 안전 혁신",details:["건설 · 제조 · 플랜트 현장 적용 사례","무인점검 및 예측정비 기술"],who:"로봇기업 대표 · 스마트건설 전문가"},
+  policy3:{side:"policy",place:P,title:"AI 산업 육성과 안전규제 혁신 정책",details:["국가 AI 정책 방향","첨단산업 안전관리 체계","반도체 · 배터리 산업 안전정책"],who:"산업통상자원위원회 소속 국회의원"},
+  tech3:{side:"tech",place:T,title:"데이터 기반 재해예측 및 사고예방 전략",details:["Predictive Safety","사고 위험도 분석 시스템","AI 기반 위험예측 사례"],who:"AI 전문가"},
+  policy4:{side:"policy",place:P,title:"ESG와 안전보건 정책의 융합",details:["ESG 공시 강화와 안전성과 관리","지속가능경영 정책 방향"],who:"ESG 정책 전문가 · 국회의원"},
+  tech4:{side:"tech",place:T,title:"CEO 안전리더십과 안전문화 구축",details:["글로벌 우수기업 사례","Safety First 조직문화 정착 전략"],who:"안전문화 컨설턴트"},
+  policy5:{side:"policy",place:P,title:"국가 재난·산업안전 컨트롤타워 정책",details:["재난대응 체계","국가 안전 거버넌스 개선 과제"],who:"행정안전위원회 국회의원"},
+  close:{side:"center",place:H,title:"수료식",details:["수료식 및 축사","수료증 수여"],who:"한보총 회장 · 국회의원"}
+};
+var order=["open","policy1","visit","tech1","policy2","tech2","policy3","tech3","policy4","tech4","policy5","close"];
+var dates=["9/30","10/7","10/14","10/21","10/28","11/4","11/11","11/18","11/25","12/2","12/9","12/16"];
+var panel=document.getElementById("panel");
+function render(){
+  panel.innerHTML=order.map(function(k,i){
+    var l=lectures[k];
+    return '<article class="wk '+l.side+'">'+
+      '<div class="wk-top"><span class="wk-n au">'+String(i+1).padStart(2,"0")+'</span>'+
+      '<span class="wk-date">'+dates[i]+'</span><span class="wk-place">'+l.place+'</span></div>'+
+      '<h3>'+l.title+'</h3>'+
+      '<ul>'+l.details.map(function(d){return '<li>'+d+'</li>';}).join("")+'</ul>'+
+      (l.who?'<div class="who"><span>강사</span>'+l.who+'</div>':"")+
+    '</article>';
+  }).join("");
+  observe();
+}
+var io;
+function observe(){
+  if(io) io.disconnect();
+  var items=panel.querySelectorAll(".wk");
+  if(window.matchMedia("(prefers-reduced-motion: reduce)").matches){
+    items.forEach(function(el){el.classList.add("in")}); return;
+  }
+  io=new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } });
+  },{threshold:.12,rootMargin:"0px 0px -40px 0px"});
+  items.forEach(function(el){io.observe(el)});
+}
+var nav=document.getElementById("nav");
+window.addEventListener("scroll",function(){nav.classList.toggle("scrolled",window.scrollY>20)},{passive:true});
+render();
+</script>
+</body>
+</html>
