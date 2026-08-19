@@ -191,22 +191,17 @@
   .legend .lp{background:#63B0EA}.legend .lt{background:#37CBAB}.legend .lc{background:#E6CE8E}
 
   .timeline{position:relative}
-  .timeline::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;
-    background:linear-gradient(180deg,transparent,var(--gline) 5%,var(--gline) 95%,transparent)}
-  .wk{position:relative;width:calc(50% - 42px);margin-bottom:22px;padding:28px 30px 30px;
-    background:rgba(255,255,255,.06);border:1px solid rgba(120,180,255,.17);
+  .wk{position:relative;width:calc(50% - 11px);margin-bottom:22px;padding:28px 30px 30px;
+    background:linear-gradient(160deg,rgba(255,255,255,.10),rgba(255,255,255,.02)),#0A1C46;border:1px solid rgba(120,180,255,.17);
     opacity:0;transform:translateY(20px);transition:opacity .6s,transform .6s,border-color .3s}
   .wk.in{opacity:1;transform:none}
   .wk:hover{border-color:var(--gline)}
+  .wk.center:hover{border-color:var(--gold)}
+  .wk{position:relative;z-index:1}
   .wk.policy{margin-right:auto;border-left:3px solid #63B0EA}
   .wk.tech{margin-left:auto;border-left:3px solid #37CBAB}
   .wk.center{width:min(600px,100%);margin-left:auto;margin-right:auto;text-align:center;
-    background:rgba(216,180,90,.09);border:1px solid var(--gline)}
-  .wk::after{content:"";position:absolute;top:38px;width:11px;height:11px;
-    background:linear-gradient(135deg,#F7E7B8,#A9822E);box-shadow:0 0 0 4px rgba(216,180,90,.14)}
-  .wk.policy::after{right:-47px}
-  .wk.tech::after{left:-47px}
-  .wk.center::after{display:none}
+    background:linear-gradient(160deg,rgba(216,180,90,.16),rgba(216,180,90,.03)),#0B1F49;border:1px solid var(--gline)}
   .wk-top{display:flex;align-items:baseline;gap:15px;flex-wrap:wrap;margin-bottom:14px}
   .wk-n{font-size:36px;font-weight:700;line-height:1;letter-spacing:-.03em}
   .wk-date{font-size:18px;font-weight:700;color:#fff}
@@ -221,10 +216,7 @@
   .wk.center ul{display:inline-block;text-align:left}
   .cur-note{margin-top:26px;font-size:14.5px;color:var(--dim-2)}
   @media(max-width:940px){
-    .timeline::before{left:5px}
-    .wk,.wk.center{width:calc(100% - 30px);margin-left:30px;margin-right:0;text-align:left}
-    .wk::after{left:-36px !important;right:auto !important}
-    .wk.center::after{display:block}
+    .wk,.wk.center{width:100%;margin-left:0;margin-right:0;text-align:left}
     .wk.center .wk-top{justify-content:flex-start}
   }
 
@@ -410,7 +402,7 @@
         <dl class="kv">
           <dt>기간</dt><dd>2026. 9. 30.(수) ~ 12. 16.(수) 12주 과정</dd>
           <dt>시간</dt><dd>매주 수요일 18:00~21:00<br>(18:00~19:00 저녁식사)</dd>
-          <dt>장소</dt><dd>호텔(여의도 소재), 국회 의원회관,<br>FKI타워(구 전경련회관) 등</dd>
+          <dt>장소</dt><dd>호텔(여의도 소재), 국회 의원회관,<br>전경련회관(FKI타워) 등</dd>
           <dt>운영기관</dt><dd>(사)한국안전보건단체총연합회</dd>
           <dt>구성</dt><dd>입학식 · 특강 · 국내 산업시찰 1회<br>해외연수 1회(일본) · 수료식</dd>
         </dl>
@@ -434,14 +426,14 @@
   <div class="wrap">
     <div class="sec-head">
       <div class="eyebrow">12주 커리큘럼</div>
-      <h2>한 주는 <span class="aq">국회</span>에서,<br>다음 주는 <span class="aq">산업 현장</span>에서</h2>
-      <p>정책 강의(국회 의원회관)와 기술 강의(FKI타워)가 번갈아 진행됨.</p>
+      <h2>한 주는 <span class="aq">국회</span>에서,<br>한 주는 <span class="aq">전경련회관(FKI타워)</span>에서</h2>
+      <p>정책 강의(국회 의원회관)와 기술 강의(전경련회관/FKI타워)가 번갈아 진행됨.</p>
     </div>
 
 
     <div class="legend">
       <span><i class="lp"></i>국회 의원회관 · 정책</span>
-      <span><i class="lt"></i>FKI타워 · AI·기술</span>
+      <span><i class="lt"></i>전경련회관(FKI타워) · AI·기술</span>
       <span><i class="lc"></i>호텔 · 기업체</span>
     </div>
 
@@ -459,7 +451,7 @@
     </div>
     <div class="day">
       <div class="sched">
-        <div class="srow"><div class="t au">18:00–19:00</div><div><h4>저녁식사</h4><p>국회의원 식당 또는 FKI타워 식당</p></div></div>
+        <div class="srow"><div class="t au">18:00–19:00</div><div><h4>저녁식사</h4><p>국회의원 식당 또는 전경련회관(FKI타워) 식당</p></div></div>
         <div class="srow"><div class="t au">19:00–20:00</div><div><h4>주제별 강의</h4><p>국회의원 · AI 전문가 · 안전보건 전문가</p></div></div>
         <div class="srow"><div class="t au">20:00–20:30</div><div><h4>토론</h4><p>강사와 직접 토론 · 현장 질의</p></div></div>
         <div class="srow"><div class="t au">20:30–21:00</div><div><h4>원우 소개</h4><p>교육생 상호 소개 및 사업 소개</p></div></div>
@@ -593,12 +585,12 @@
   <div class="wrap foot-in">
     <span>(사)한국안전보건단체총연합회(KFSH) · 회장 백은미 · 02-6952-1962<br>
       서울특별시 영등포구 영등포로 150 생각공장 당산 C동 707호 (07292)</span>
-    <span>&copy; 2026 KFSH · 제1기 AI-SHEP</span>
+    <span>&copy; 2026 KFSH · 제1기 AI-SHEP <span style="opacity:.5">v8</span></span>
   </div>
 </footer>
 
 <script>
-var P="국회 의원회관",T="FKI타워",H="호텔",C="기업체";
+var P="국회 의원회관",T="전경련회관(FKI타워)",H="호텔",C="기업체";
 var lectures={
   open:{side:"center",place:H,title:"입학식",details:["입학식 및 축사","과정 소개, 원우 소개"],who:"한보총 회장 · 국회의원"},
   visit:{side:"center",place:C,title:"국내 산업시찰",details:["안전보건 우수기업 시찰","일정은 별도 안내"],who:""},
